@@ -56,6 +56,7 @@ message ACounters
 {
     repeated ACounter acs = 1; // multiple counter data for fast transfer
     uint32 intervalSec = 2; //   0 = raw, other = seconds of interval
+    google.protobuf.Timestamp ts = 3;
 }
 
 
